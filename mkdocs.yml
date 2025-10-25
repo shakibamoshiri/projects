@@ -1,0 +1,138 @@
+site_name: Shakiba Moshiri Projects
+
+site_url: https://projects.shakiba.net/
+
+
+theme:
+  name: material
+  icon:
+    logo: octicons/tasklist-16
+    favicon: assets/images/favicon.png
+  features:
+    - navigation.top
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tabs
+    - navigation.path
+    - navigation.indexes
+    - navigation.footer
+    - navigation.expand
+    - navigation.sections
+    - header.autohide
+    - content.code.copy
+    - content.code.select
+    - content.code.annotate
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: black
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+
+
+nav:
+  - Hi: index.md
+  - CPP:
+    - cpp/index.md
+    - CPP:
+      - cpp/rinp.md
+      - cpp/bline.md
+      - cpp/renrem.md
+  - JavaScript:
+    - js/index.md
+    - JavaScript:
+      - js/js-my-admin.md
+      - js/badge-for-git.md
+  - CSS:
+    - css/index.md
+    - CSS:
+      - css/somacss.md
+  - NodeJS:
+    - nodejs/index.md
+    - NodeJS:
+      - nodejs/nodepost.md
+      - nodejs/adzuki.md
+      - nodejs/dq.md
+  - Bash:
+    - bash/index.md
+    - Bash:
+      - bash/curly.md
+      - bash/lanscale.md
+      - bash/ansishell.md
+      - bash/prox.md
+
+
+extra_css:
+  - stylesheets/extra.css
+
+extra:
+  generator: false
+  social:
+    - name: Github
+      icon: material/github
+      link: https://github.com/shakibamoshiri
+    - name: Lindedin
+      icon: material/linkedin
+      link: https://www.linkedin.com/in/shakiba-moshiri/
+    - name: Telegram
+      icon: simple/telegram
+      link: https://t.me/shakibamoshiri
+    - name: Email
+      icon: material/email
+      link: info@example.com
+
+copyright: >
+  Copyright &copy; 20XX Shakiba Moshiri
+
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - abbr
+  - admonition
+  - attr_list
+  - md_in_html
+  - footnotes
+  - def_list
+  - tables
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.magiclink
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+
+plugins:
+  - search
+  # - git-authors
+  - git-revision-date-localized:
+      type: date
