@@ -14,7 +14,7 @@ and out-of-box features like
 
 - multi-nodes
 - multi-admins 
-- minimal and static dashboard pre user for stat and subscription [see its demo](prox-user-stati-dashboard)
+- minimal and static dashboard pre user for stat and subscription [see prox-dash](https://prox-dash.pages.dev/)
 - notification (telegram has been added)
 - pay-as-you-go for admins
 - pay-as-you-go for users (if enabled)
