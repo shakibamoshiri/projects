@@ -12,20 +12,28 @@ prox is a full AAA[^1] wrapper for shadowsocks in sing-box[^2] proxy. It manages
 
 and out-of-box features like
 
+- multi-pools
 - multi-nodes
-- multi-admins 
-- minimal and static dashboard pre user for stat and subscription [see prox-dash](https://prox-dash.pages.dev/)
+- multi-agents (superadmin + other admins)
+- minimal and static dashboard pre user for stat and subscription
+    - [not-connected-yet](https://9ced979b4f.pages.dev/admin/ncy/)
+    - [connected](https://9ced979b4f.pages.dev/admin/con/)
+    - [expired](https://9ced979b4f.pages.dev/admin/exp/)
 - notification (telegram has been added)
-- pay-as-you-go for admins
-- pay-as-you-go for users (if enabled)
+- admin panel bot (see Telegram bot `@proxdemobot` or [proxdemobot](https://t.me/proxdemobot))
 
 
-## idea 
+## idea
+
+having clusters of shadowsocks-over-shadowTLS servers using sing-box
+
+
+## design
 
 prox has been deigned with HA (high availability) and HS (horizontal scaling) in mind
 
 
-## source code
+## source 
 
 It is available on [https://github.com/shakibamoshiri/prox](https://github.com/shakibamoshiri/prox)
 
